@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: 100%;
+}
+.radio-page {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f5f5f5;
+}
+
+.header {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  width: 100%;
+  background-color: rgb(34, 43, 54);
+  border-bottom: 1px solid rgb(83, 90, 102);
+}
+.navigation {
+  display: flex;
+  padding: 0 50px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+}
+.navigation-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-box {
+  width: 6rem;
+}
+.img {
+  width: 100%;
+}
+.navigation-list-item {
+  font-size: 16px;
+  margin: 20px;
+  color: white;
+  text-decoration: none;
+}
+.decoration {
+  text-decoration: none;
+  display: block;
+  line-height: 46px;
+  border-bottom: 2px solid transparent;
+}
+.decoration:hover {
+  text-decoration: none;
+  line-height: 46px;
+  border-bottom: 2px solid#059bff;
+  transition: all 1s ease 0s;
+}
+.saign-in-page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0;
+}
+.sign-in-page-parts-content {
+  margin: 0 80px;
+}
+.sign-in-page-form-box {
+  width: 550px;
+  height: 470px;
+  background: url("https://www.messy.fm/static/media/sign-in.009c8170.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #f5f5f5;
+}
+
+.sign-in-page-form {
+  text-align: center;
+  background-color: white;
+  padding: 7px 15px;
+}
+.sign-in-page-form:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: all 1s ease 0s;
+}
+.sign-in-page-form-container {
+  padding: 26px;
+}
+.help {
+  display: flex;
+  justify-content: space-between;
+}
+.help-remember-block-1 {
+  display: flex;
+  justify-content: space-around;
+}
+.input {
+  width: 100%;
+  box-sizing: border-box;
+
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  border: none;
+  text-align: center;
+}
+
+.email-password-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 8px 10px 8px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+.email-password-input:hover {
+  border-color: rgb(2, 34, 34);
+}
+.input-button {
+  background-color: rgb(9, 76, 139);
+  color: antiquewhite;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border: 2px solid rgb(1, 1, 17);
+  border-radius: 25px;
+}
+.input-button:hover {
+  color: rgb(222, 230, 230);
+  background-color: rgb(31, 62, 90);
+}
+
+.footer {
+  background-color: #222b36;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 50px;
+}
+
+.citeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #d9d9d9;
+}
+
+.citeInfo li {
+  list-style-type: none;
+  line-height: 35px;
+}
+
+.citeInfo li:hover {
+  text-decoration: underline;
+  color: white;
+}
+.URLink {
+  color: white;
+}
+.forgot-password {
+  color: #222b36;
+}
+.forgot-password:hover {
+  color: #059bff;
+}
+
+@media only screen and (max-width: 768px) {
+  .saign-in-page-content {
+    flex-direction: column;
+  }
+  .sign-in-page-form-box {
+    width: 500px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .sign-in-page-form-box {
+    display: none;
+  }
+}
